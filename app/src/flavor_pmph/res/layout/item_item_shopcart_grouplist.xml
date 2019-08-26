@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_checkitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkbox_selector"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:visibility="invisible"
+            />
+
+        <RelativeLayout
+            android:id="@+id/ll_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_round_imageview"
+            android:layout_toRightOf="@+id/cb_checkitem"
+            >
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_img"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ll_img"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_gds_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全国护士执业资格考试指导书名书名书名"
+                android:textColor="@color/gray_312B2D"
+                android:textSize="@dimen/smaller_textsize"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/tv_cate_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="规格"
+                android:textSize="@dimen/smaller_textsize"
+                android:textColor="@color/gray_969696"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="1件x1"
+                    android:textSize="@dimen/smaller_textsize"
+                    android:textColor="@color/gray_969696"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="￥40.00"
+                    android:textSize="@dimen/smaller_textsize"
+                    android:textColor="@color/orange_ff6a00"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

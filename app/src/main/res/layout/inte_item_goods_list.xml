@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/shape_round_textview">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_gds_img"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:src="@drawable/default_img"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_gds_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内容内容内容内容内容内容内容内容"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:ellipsize="end"
+            android:textColor="@color/gray_312B2D"
+            android:textSize="@dimen/smaller_textsize"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/tv_gds_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50积分"
+                android:textColor="@color/red"
+                android:textSize="@dimen/smaller_textsize"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换购"
+                android:textSize="10sp"
+                android:textColor="@color/yellow_ffa800"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@drawable/shape_round_yellow_textview"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

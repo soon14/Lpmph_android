@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_ebebeb"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_coup_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人卫券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_textsize"
+            android:background="@color/blue_007aff"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_img" />
+
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_img"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="店铺名称只有这么多"
+            android:textColor="@color/black_333333"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/item_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:layout_toRightOf="@+id/item_img"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="销量：1234567"
+            android:textColor="@color/gray_969696"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_inventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_sales"
+            android:layout_toRightOf="@+id/item_img"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:text="共计56789件商品"
+            android:textColor="@color/gray_969696"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/to_store_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_store_search_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="进入店铺"
+            android:textColor="@color/red_e61515"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/layout_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.ailk.pmph.ui.view.MaskableImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <com.ailk.pmph.ui.view.MaskableImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY" />
+
+            <com.ailk.pmph.ui.view.MaskableImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY" />
+
+            <com.ailk.pmph.ui.view.MaskableImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_no_store_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white_dddddd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="没有找到店铺商品" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

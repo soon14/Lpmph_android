@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+    >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/arrow_left_black"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/invoice_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_textsize"
+        />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ebebeb"
+    />
+
+    <ScrollView
+        android:id="@+id/sv_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray_ebebeb"
+        android:scrollbars="none"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/invoice_type"
+                android:textColor="@color/gray_312B2D"
+                android:textSize="@dimen/small_textsize"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+            >
+                <TextView
+                    android:id="@+id/tv_paper"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_delbutton"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/normal_invoice"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/small_textsize"
+                />
+
+                <TextView
+                    android:id="@+id/tv_electron"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_textview"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/e_invoice"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/small_textsize"
+                    android:visibility="invisible"
+                />
+
+                <TextView
+                    android:id="@+id/tv_vat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_textview_noclick"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/value_added_tax_invoice"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/small_textsize"
+                    android:visibility="invisible"
+                />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_ebebeb"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_ebebeb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/invoice_receiver_info"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/small_textsize"
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/invoice_receiver_title"
+                        android:textColor="@color/gray_969696"
+                        android:textSize="@dimen/smaller_textsize"
+                    />
+
+                    <EditText
+                        android:id="@+id/et_head"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_round_textview"
+                        android:padding="10dp"
+                        android:textColor="@color/gray_312B2D"
+                        android:textSize="@dimen/smaller_textsize"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/invoice_receiver_tel"
+                        android:textColor="@color/gray_969696"
+                        android:textSize="@dimen/smaller_textsize"
+                    />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_round_textview"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="@color/gray_312B2D"
+                        android:textSize="@dimen/smaller_textsize"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/invoice_receiver_email"
+                        android:textColor="@color/gray_969696"
+                        android:textSize="@dimen/smaller_textsize"
+                    />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_round_textview"
+                        android:hint="用来接收电子发票邮箱，可选填"
+                        android:padding="10dp"
+                        android:textColor="@color/gray_312B2D"
+                        android:textColorHint="@color/gray_d4d4d4"
+                        android:textSize="@dimen/smaller_textsize"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray_ebebeb"/>
+
+            </LinearLayout>
+
+
+
+            <RadioGroup android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/radio_group"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                <RadioButton android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/company"
+                             android:padding="10dp"
+                             android:layout_marginLeft="10dp"
+                             android:layout_marginStart="10dp"
+                             android:id="@+id/radio_company"
+
+
+                />
+                <RadioButton android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/personal"
+                             android:padding="10dp"
+                             android:id="@+id/radio_person"
+
+                />
+            </RadioGroup>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_ebebeb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/invoice_title"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/small_textsize"
+                    android:layout_marginRight="27dp"
+                />
+
+                <EditText
+                    android:id="@+id/et_head_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.86"
+                    android:background="@drawable/shape_round_textview"
+                    android:maxLength="25"
+                    android:padding="10dp"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/smaller_textsize"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_ebebeb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/layout_taxpayer"
+                tools:visibility="visible"
+                android:visibility="gone"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/taxpayer_number"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/small_textsize"
+                />
+
+                <EditText
+                    android:id="@+id/et_taxpayer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_textview"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:hint="请输入正确的纳税人识别号"
+                    android:digits="@string/filter_unsigned_number_char"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/smaller_textsize"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_ebebeb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/addnum_detail"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/small_textsize"
+                />
+
+                <TextView
+                    android:id="@+id/tv_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_textview"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/yes"
+                    android:textColor="@color/gray_969696"
+                    android:textSize="@dimen/small_textsize"
+                />
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_delbutton"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/no"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/small_textsize"
+                />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_textview_noclick"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/small_textsize"
+                    android:visibility="invisible"
+                />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_ebebeb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/invoice_content"
+                    android:textColor="@color/gray_312B2D"
+                    android:textSize="@dimen/small_textsize"
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_ebebeb"/>
+
+                <com.ailk.pmph.ui.view.CustomListView
+                    android:id="@+id/lv_bill_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_ebebeb">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_round_button"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_textsize"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

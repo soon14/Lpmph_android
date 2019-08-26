@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <RadioButton
+        android:id="@+id/rb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:focusable="false"
+        android:button="@drawable/background_radio_button"
+        />
+
+    <TextView
+        android:id="@+id/tv_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="满100、200、300、500可换购商品"
+        android:textColor="@color/gray_312B2D"
+        android:textSize="@dimen/small_textsize"
+        android:layout_toRightOf="@+id/rb_check"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

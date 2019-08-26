@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_check_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/background_radio_button"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_textsize"
+                android:background="@drawable/bg_coupon"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_coup_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券 满30减20"
+                android:textColor="@color/gray_312B2D"
+                android:textSize="@dimen/small_textsize"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用范围："
+                android:textColor="@color/gray_969696"
+                android:textSize="@dimen/small_textsize"
+                />
+
+            <TextView
+                android:id="@+id/tv_condition_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容内容内容内容内容内容内容内容内容内容内容内容"
+                android:textColor="@color/gray_969696"
+                android:textSize="@dimen/small_textsize"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_inactive_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有效期至：2016/01/02"
+            android:textColor="@color/gray_969696"
+            android:textSize="@dimen/small_textsize"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

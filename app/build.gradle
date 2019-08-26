@@ -1,0 +1,170 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+//蒲公英Gradle上传插件
+apply plugin: 'com.ailk.gradle.plugin.UploadPlugin'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'ailk'
+            keyPassword '123456'
+            storeFile file('pmph.jks')
+            storePassword '123456'
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        applicationId "com.ailk.pmph"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 21
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            debuggable true
+        }
+//        mini{
+//            initWith(release)
+//            applicationIdSuffix ".mini"
+//        }
+        pmph{
+            initWith(release)
+            debuggable true
+        }
+//        asiainfo{
+//            initWith(release)
+//            applicationIdSuffix ".asiainfo"
+//        }
+    }
+
+    productFlavors{
+//        flavor_mini{
+//            manifestPlaceholders = ["app":"轻量电商"]
+//        }
+        flavor_pmph{
+            versionCode 15
+            versionName "1.15"
+            manifestPlaceholders = ["app":"人卫智慧商城"]
+        }
+//        flvor_asiainfo{
+//            manifestPlaceholders = ["app":"亚信电商"]
+//        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INFTICE'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'com/rt/CharacterDecoder.class'
+    }
+}
+
+repositories {
+    jcenter()
+    maven { url "http://dl.bintray.com/populov/maven" }
+    mavenCentral()
+}
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.7.13'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.mcxiaoke.viewpagerindicator:library:2.4.1@aar'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.3@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.3@aar'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile project(':netlib')
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.7.13'
+    androidTestCompile "org.mockito:mockito-android:2.7.13"
+
+    //rx
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+    //Log相关
+    compile 'com.apkfuns.logutils:library:1.4.2'
+    compile 'com.jcodecraeer:xrecyclerview:1.3.2'
+    compile ('org.igniterealtime.smack:smack-android-extensions:4.1.0'){
+        exclude group : "xpp3",module : "xpp3"
+    }
+    compile ('org.igniterealtime.smack:smack-tcp:4.1.0'){
+
+        exclude group : "xpp3",module : "xpp3"
+    }
+    compile ('org.igniterealtime.smack:smack-android:4.1.0'){
+        exclude group : "xpp3",module : "xpp3"
+    }
+
+    compile 'com.loopj.android:android-async-http:1.4.8'
+    compile project(":netlib")
+    compile 'com.ailk.android.view:PhotoPicker:0.0.1-SNAPSHOT'
+    //constraint layout
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //imsdk
+    compile 'com.ailk.android.library:IMSDK:0.0.8-SNAPSHOT'
+}
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+
+}
+
+ext{
+    wangke_api_key = 'fbc465e0f9a93a0c436f79276abbd866'
+    wangke_user_key = '46fe943dc90a83b628b0eaf946315a0f'
+
+    jiangwei_api_key = '207b1ef4b2f0a6b64b0a7cfb82a0e6a8'
+    jiangwei_user_key = 'ffac57403296a763da310e28269566e2'
+
+
+}
+
+
+
+//蒲公英相关
+project.pgyConfiguration {
+    _api_key = jiangwei_api_key
+    uKey = jiangwei_user_key
+    file = file("/Users/wangke1/Downloads/人卫智慧商城.apk")
+    updateDescription = '纳税人识别号输入优化'
+}
+pgyUpload.dependsOn 'assembleFlavor_pmphPmph'

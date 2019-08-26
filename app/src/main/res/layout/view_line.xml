@@ -1,0 +1,9 @@
+<!--间隔-->
+<View
+    android:id="@+id/menu_line"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_above="@+id/menu_bottom"
+    android:background="@color/bg_Gray"
+    />

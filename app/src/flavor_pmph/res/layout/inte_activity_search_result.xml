@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/arrow_left_black" />
+
+            <LinearLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_toRightOf="@+id/iv_back"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/search_content_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_dp3">
+
+                    <EditText
+                        android:id="@+id/et_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="搜索积分商品"
+                        android:textColorHint="@color/gray_969696"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/search"
+                        android:drawablePadding="10dp"
+                        android:paddingLeft="10dp"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:text="搜索"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/body_textsize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ebebeb"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/sort_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="排序"
+                    android:textSize="@dimen/small_textsize"
+                    android:textColor="@color/orange_ff6a00"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_sort_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/inte_arrow_down"
+                    android:layout_toRightOf="@+id/tv_sort"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/gray_ebebeb"
+                />
+
+            <RelativeLayout
+                android:id="@+id/range_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分范围"
+                    android:textSize="@dimen/small_textsize"
+                    android:textColor="@color/gray_969696"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_range_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/inte_arrow_down"
+                    android:layout_toRightOf="@+id/tv_range"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshRecyclerView
+        android:id="@+id/recycler_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ImageView
+        android:id="@+id/iv_none_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/none_search"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

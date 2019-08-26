@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+              android:background="@color/white"
+    >
+    <!-- 左部分 Start-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_left_black"
+        android:paddingRight="15dp"
+        android:id="@+id/logintitle_imageview_back"
+        />
+
+    <!-- 左部分 End-->
+    <!-- 中间部分 Start-->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/logintitle_layout_title"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:id="@+id/logintitle_textview_title"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <!-- 中间部分 End-->
+   <!-- 右部分 Start-->
+
+   <!-- 右部分 End-->
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/shape_round_dialog"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认发送该商品信息到聊天页"
+        android:textColor="@color/black"
+        android:textSize="@dimen/body_textsize"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/shape_round_imageview"
+            >
+
+            <ImageView
+                android:id="@+id/iv_gds_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/default_img"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_gds_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名字"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_textsize"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_gds_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥49.00"
+                android:textColor="@color/orange_ff6a00"
+                android:textSize="@dimen/small_textsize"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_im_textview_confirm"
+                android:text="确定"
+                android:textSize="@dimen/small_textsize"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_im_textview_cancel"
+                android:text="取消"
+                android:textSize="@dimen/small_textsize"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

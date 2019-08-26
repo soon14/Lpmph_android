@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_weight="1"
+    android:gravity="left"
+    android:orientation="horizontal"
+>
+
+
+    <ImageView
+        android:id="@+id/content_imageview"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        tools:src="@drawable/default_img"
+        tools:ignore="ContentDescription"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_code"
+                android:textColor="@color/black"
+            />
+
+            <TextView
+                android:id="@+id/order_code_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                tools:text="111"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_price"
+                android:textColor="@color/black"
+            />
+
+            <TextView
+                android:id="@+id/order_price_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="10"
+                android:textColor="@color/orange_ff6a00"
+                tools:text="￥39.00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_date"
+                android:textColor="@color/black"
+            />
+
+            <TextView
+                android:id="@+id/order_date_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                tools:text="2016-01-01"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="drawer_text_color">@color/white</color>
+    <color name="tab_text_color">@color/white</color>
+
+    <color name="title_text">#212121</color>
+    <color name="content_text">#727272</color>
+
+    <color name="blue_light">#4cb7ff</color>
+    <color name="small_circle_blue">@color/blue_light</color>
+    <color name="small_circle_red">@color/red_light</color>
+    <color name="small_circle_orange">#ff9500</color>
+
+    <color name="alpha_white_0">#1affffff</color>
+    <color name="alpha_white_1">#8affffff</color>
+    <color name="alpha_white_2">#eeffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#eeeeee</color>
+    <color name="grey_light">#f5f5f5</color>
+    <color name="grey_light1">#f9f9f9</color>
+    <color name="grey_dark1">#666666</color>
+    <color name="grey_dark2">#dedede</color>
+    <color name="grey_dark3">#d6d6d6</color>
+    <color name="grey_dark4">#ededed</color>
+    <color name="grey_dark5">#9d9d9d</color>
+    <color name="grey_dark6">#cbcbcb</color>
+    <color name="red_light">#f24b17</color>
+    <color name="red_dark">#c62828</color>
+    <color name="black">#000000</color>
+    <color name="alpha_black">#80000000</color>
+    <color name="black_light">#0e0e0e</color>
+
+    <color name="color_webview_progressbar">#80ffffff</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="toolbar_textcolor">#245c9d</color>
+
+    <color name="text_enabled">#24a8e8</color>
+    <color name="text_disabled">#7a7a7a</color>
+    <color name="window_color">@color/white</color>
+    <color name="color_line">#d2d3d7</color>
+    <color name="color_hint">#bfc0c1</color>
+
+    <color name="blue_00adf3">#00adf3</color>
+    <color name="blue_99d0f1">#99d0f1</color>
+    <color name="blue_1b559b">#1b559b</color>
+    <color name="blue_68a4ee">#68a4ee</color>
+    <color name="blue_00a1e9">#00a1e9</color>
+
+    <color name="green_65c50f">#65c50f</color>
+    <color name="orange_f2ac25">#f2ac25</color>
+    <color name="blue_009fe8">#009fe8</color>
+    <color name="progressColor">#009fe8</color>
+</resources>

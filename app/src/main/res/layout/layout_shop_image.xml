@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_gds_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/default_img"
+        android:scaleType="fitXY"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <ImageView
+            android:id="@+id/iv_gds_type_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/tag_service"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom">
+
+        <ImageView
+            android:id="@+id/iv_service_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/tag_service"
+            android:visibility="gone"
+            tools:visibility="visible"
+        />
+
+
+    </FrameLayout>
+
+</FrameLayout>

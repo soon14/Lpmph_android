@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="180dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/grid_goods_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_gds_img"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_img"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_gds_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内容内容内容内容内容内容内容内容"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smaller_textsize"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_gds_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/orange_ff6a00"
+                android:textSize="@dimen/smaller_textsize"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_similar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找相似"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textsize"
+                android:padding="3dp"
+                android:background="@drawable/shape_round_similar"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_like_collected"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

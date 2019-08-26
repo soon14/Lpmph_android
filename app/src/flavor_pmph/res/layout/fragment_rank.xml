@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_gray_bright">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排行榜"
+            android:textSize="@dimen/home_textsize"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ebebeb"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/orange_ff6a00"
+        app:tabSelectedTextColor="@color/orange_ff6a00"
+        app:tabTextColor="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ebebeb"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshRecyclerView
+        android:id="@+id/rv_rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/sw_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--&gt;-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:background="@color/white">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_rank1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=""-->
+                        <!--android:textColor="@color/orange_ff6a00"-->
+                        <!--android:textSize="@dimen/small_textsize"-->
+                        <!--android:padding="10dp"-->
+                        <!--/>-->
+
+                    <!--<View-->
+                        <!--android:id="@+id/rank1_line"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="2dp"-->
+                        <!--android:background="@color/orange_ff6a00"-->
+                        <!--android:visibility="gone"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+
+                <!--<View-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:background="@color/gray_ebebeb"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_rank2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=""-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="@dimen/small_textsize"-->
+                        <!--android:padding="10dp"-->
+                        <!--/>-->
+
+                    <!--<View-->
+                        <!--android:id="@+id/rank2_line"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="2dp"-->
+                        <!--android:background="@color/orange_ff6a00"-->
+                        <!--android:visibility="gone"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:background="@color/gray_ebebeb"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_rank3"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=""-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="@dimen/small_textsize"-->
+                        <!--android:padding="10dp"-->
+                        <!--/>-->
+
+                    <!--<View-->
+                        <!--android:id="@+id/rank3_line"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="2dp"-->
+                        <!--android:background="@color/orange_ff6a00"-->
+                        <!--android:visibility="gone"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<com.handmark.pulltorefresh.library.PullToRefreshListView-->
+                <!--android:id="@+id/lv_rank"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--&gt;-->
+            <!--</com.handmark.pulltorefresh.library.PullToRefreshListView>-->
+
+        <!--</LinearLayout>-->
+
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+</LinearLayout>

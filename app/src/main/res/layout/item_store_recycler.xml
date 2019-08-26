@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/grid_store_bg"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="2dp"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="商品名称商品名称商品名称商品名称商品名称名称名称商品名称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_textsize" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="none"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:text="￥60.00"
+            android:textColor="@color/red"
+            android:textSize="@dimen/smallest_textsize" />
+
+        <TextView
+            android:id="@+id/item_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="24人付款"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/smaller_textsize"
+            android:paddingTop="3dp"/>
+    </LinearLayout>
+
+</LinearLayout>

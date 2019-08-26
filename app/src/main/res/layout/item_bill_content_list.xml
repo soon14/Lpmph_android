@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RadioButton
+        android:id="@+id/rb_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checked="false"
+        android:button="@null"
+        android:background="@drawable/background_radio_button"
+        />
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图书"
+        android:textColor="@color/gray_312B2D"
+        android:textSize="@dimen/small_textsize"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        />
+
+</LinearLayout>

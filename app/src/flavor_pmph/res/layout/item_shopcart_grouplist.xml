@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_groups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_radio_button"
+            android:button="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_gropus_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【组合套餐】"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smaller_textsize"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/cb_groups"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_gropus_name"
+            >
+
+            <FrameLayout
+                android:id="@+id/fl_groups_num"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:background="@drawable/attribute_bg"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:id="@+id/tv_reduce_groups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一"
+                    android:textSize="@dimen/smaller_textsize"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_groups_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textSize="@dimen/small_textsize"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_add_groups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="十"
+                    android:textSize="@dimen/smaller_textsize"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingRight="8dp"
+                    />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_groups_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/fl_groups_num"
+                android:text="￥40.00"
+                android:textSize="@dimen/smaller_textsize"
+                android:textColor="@color/orange_ff6a00"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_del_groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="删除"
+            android:textColor="@color/orange_ff6a00"
+            android:background="@drawable/shape_round_delbutton"
+            android:layout_alignParentRight="true"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <com.ailk.pmph.ui.view.CustomListView
+        android:id="@+id/lv_groups"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        >
+    </com.ailk.pmph.ui.view.CustomListView>
+
+    <RelativeLayout
+        android:id="@+id/ll_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小计：￥0.00"
+            android:textColor="@color/red"
+            android:textSize="@dimen/body_textsize"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_total_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立减0.00"
+            android:textColor="@color/gray_969696"
+            android:textSize="@dimen/smaller_textsize"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_total_price"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

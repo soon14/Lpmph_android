@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_ebebeb"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_black"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找回密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_textsize"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reg_phone"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_gravity="center_vertical"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:textSize="@dimen/body_textsize"
+                    android:textColor="@color/gray_312B2D"
+                    android:paddingRight="15dp"
+                    />
+
+                <com.ailk.pmph.ui.view.ClearEditText
+                    android:id="@+id/et_tel_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入您的手机号码"
+                    android:textSize="@dimen/small_textsize"
+                    android:maxLength="11"
+                    android:inputType="phone"
+                    android:textColorHint="@color/black_d8d8d8"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"
+                android:textSize="@dimen/small_textsize"
+                android:textColor="@color/white"
+                android:background="@color/orange_ff6a00"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ebebeb"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reg_sms"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码    "
+                android:textSize="@dimen/body_textsize"
+                android:textColor="@color/black"
+                android:paddingRight="15dp"
+                />
+            <com.ailk.pmph.ui.view.ClearEditText
+                android:id="@+id/et_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:textSize="@dimen/small_textsize"
+                android:textColorHint="@color/black_d8d8d8"
+                android:inputType="number"
+                android:maxLength="6"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ebebeb"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/reg_password"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新密码    "
+                android:textSize="@dimen/body_textsize"
+                android:textColor="@color/gray_312B2D"
+                android:paddingRight="15dp"
+
+                />
+            <com.ailk.pmph.ui.view.ClearEditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="密码不少于6位数"
+                android:textSize="@dimen/small_textsize"
+                android:textColorHint="@color/black_d8d8d8"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ebebeb"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reg_password_again"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认密码"
+                android:textSize="@dimen/body_textsize"
+                android:textColor="@color/gray_312B2D"
+                android:paddingRight="15dp"
+                />
+            <com.ailk.pmph.ui.view.ClearEditText
+                android:id="@+id/et_pwd_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="再输入一次密码"
+                android:textSize="@dimen/small_textsize"
+                android:textColorHint="@color/black_d8d8d8"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/body_textsize"
+            android:background="@drawable/shape_round_button"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

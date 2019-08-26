@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_order_child_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/cb_checkitem"
+            android:background="@drawable/shape_round_imageview"
+            >
+
+            <ImageView
+                android:id="@+id/iv_product_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_avtar"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="商品名字商品名字商品名字商品名字商品名字商品名字"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_textsize"
+            android:gravity="left"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ebebeb"/>
+
+    <LinearLayout
+        android:id="@+id/ll_price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实付款："
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_textsize"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥888.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_textsize"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tv_buy_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="再次购买"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_textsize"
+                android:background="@drawable/shape_round_textview"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/tv_go_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去支付"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_textsize"
+                android:background="@drawable/shape_round_button"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="5dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ebebeb"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prop_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/shape_round_textview"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:text="0-89"
+    android:textColor="@color/black"
+    android:textSize="@dimen/smaller_textsize"
+    android:maxLines="1"
+    android:maxEms="5"
+    android:ellipsize="end">
+
+</TextView>

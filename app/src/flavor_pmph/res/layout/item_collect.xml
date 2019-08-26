@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:background="@drawable/shape_round_textview"
+              android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/shape_round_imageview"
+        android:layout_margin="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/collect_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_img"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动"
+                android:id="@+id/collect_promotion"
+                android:textColor="@color/white"
+                android:background="@color/orange_ff6a00"
+                android:padding="3dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/collect_name"
+                android:text="商品名称商品名称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smaller_textsize"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/collect_des1"
+            android:text="包邮"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/collect_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1333"
+            android:textSize="@dimen/smaller_textsize"
+            android:textColor="@color/orange_ff6a00"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/collect_des2"
+            android:text="浏览过的书"
+            android:textColor="@color/white"
+            android:background="@color/red_ea563c"
+            android:padding="3dp"
+            android:visibility="invisible"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消收藏"
+                android:id="@+id/collect_delcart"
+                android:background="@drawable/shape_round_button_gray"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textsize"
+                android:gravity="center"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"/>
+
+            <TextView
+                android:id="@+id/collect_addcart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_round_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="加入购物车"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textsize"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

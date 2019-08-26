@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:background="@drawable/app_start_asiainfo"
+    android:id="@+id/view_app_start"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过(1s)"
+        android:textSize="@dimen/smaller_textsize"
+        android:textColor="@color/black"
+        android:background="@drawable/shape_round_skip_textview_asia"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_go_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即体验"
+        android:textColor="@color/blue_1481fc"
+        android:background="@drawable/shape_round_app_start"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

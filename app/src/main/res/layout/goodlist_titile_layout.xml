@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red_e9573b"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <!-- 左部分 Start-->
+
+    <ImageView
+        android:id="@+id/title_goodlist_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_left"
+        android:paddingRight="15dp" />
+
+    <!-- 左部分 End-->
+    <!-- 中间部分 Start-->
+
+    <LinearLayout
+        android:id="@+id/title_layout_search"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_round_rectangle_white_no_stroke"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:src="@drawable/search"
+
+            />
+
+        <EditText
+            android:id="@+id/title_goodlist_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/str_searc_goods"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/title_goodlist_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            android:src="@drawable/round_close"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <!-- 中间部分 End-->
+    <!-- 右部分 Start-->
+
+    <TextView
+        android:id="@+id/title_goodlist_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <!-- 右部分 End-->
+</LinearLayout>

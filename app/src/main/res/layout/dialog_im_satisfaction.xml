@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape_round_dialog">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_satisfaction">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_satisfaction_head"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请您对本次服务进行评价"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body_textsize"
+                android:gravity="center"
+                android:padding="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_satisfaction1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="非常满意"
+                        android:textColor="@color/gray_5c5c5c"
+                        android:textSize="@dimen/smaller_textsize"
+                        android:background="@drawable/shape_im_textview_satisfaction"
+                        android:padding="5dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_satisfaction2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="满意"
+                        android:textColor="@color/gray_5c5c5c"
+                        android:textSize="@dimen/smaller_textsize"
+                        android:background="@drawable/shape_im_textview_satisfaction"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_satisfaction3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一般"
+                        android:textColor="@color/gray_5c5c5c"
+                        android:textSize="@dimen/smaller_textsize"
+                        android:background="@drawable/shape_im_textview_satisfaction"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_satisfaction4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对服务不满意"
+                    android:textColor="@color/gray_5c5c5c"
+                    android:textSize="@dimen/smaller_textsize"
+                    android:background="@drawable/shape_im_textview_satisfaction"
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_satisfaction5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对业务流程不满意"
+                    android:textColor="@color/gray_5c5c5c"
+                    android:textSize="@dimen/smaller_textsize"
+                    android:background="@drawable/shape_im_textview_satisfaction"
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_input_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_round_textview"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smaller_textsize"
+            android:hint="服务比较差，没有下次"
+            android:textColorHint="@color/gray_969696"
+            android:gravity="left"
+            android:inputType="text"
+            android:drawableRight="@drawable/icon_satisfaction_edit"
+            android:visibility="gone"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_d8d8d8"
+            />
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body_textsize"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_satisfaction_close"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
+

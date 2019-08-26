@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_black"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用优惠券"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_textsize"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ebebeb"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_useful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可用优惠券(1)"
+                android:textColor="@color/orange_ff6a00"
+                android:textSize="@dimen/small_textsize"
+                android:padding="10dp"
+                />
+
+            <View
+                android:id="@+id/useful_line"
+                android:layout_width="90dp"
+                android:layout_height="3dp"
+                android:background="@color/orange_ff6a00"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/gray_ebebeb"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_useless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不可用优惠券(0)"
+                android:textColor="@color/gray_969696"
+                android:textSize="@dimen/small_textsize"
+                android:padding="10dp"
+                />
+
+            <View
+                android:id="@+id/useless_line"
+                android:layout_width="90dp"
+                android:layout_height="3dp"
+                android:background="@color/orange_ff6a00"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ebebeb"
+        />
+
+    <ListView
+        android:id="@+id/lv_coupon_useful"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@color/gray_ebebeb"
+        android:dividerHeight="1dp"
+        >
+    </ListView>
+
+    <ListView
+        android:id="@+id/lv_coupon_useless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:divider="@color/gray_ebebeb"
+        android:dividerHeight="1dp"
+        android:visibility="gone">
+    </ListView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_ebebeb">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_round_button"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_textsize"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

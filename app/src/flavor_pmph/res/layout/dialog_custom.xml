@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_dialog"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/app_name"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="标题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_textsize"
+                android:paddingTop="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_panel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="消息"
+            android:textSize="@dimen/body_textsize"
+            />
+
+        <ScrollView
+            android:id="@+id/message_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:fadeScrollbars="true"
+            android:minHeight="40dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white_75797c"
+                android:textSize="@dimen/body_textsize" />
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#a0000000"
+            android:dividerHeight="1dp"
+            android:fadeScrollbars="true"
+            android:visibility="gone">
+        </ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button_panel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_negative"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_round_left_button"
+                android:gravity="center"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_textsize" />
+
+            <Button
+                android:id="@+id/btn_neutral"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dialog_default"
+                android:maxLines="2"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body_textsize"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_positive"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_round_right_button"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

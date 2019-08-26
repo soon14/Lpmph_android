@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_black"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人卫账号绑定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_textsize"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_bind_background"
+        android:layout_margin="30dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_bind_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尊敬的用户：xxxx，您已成功通过xxxx登录，如您已经有人卫医学网的账号请绑定。绑定后将避免您人卫医学网账户信息丢失。"
+            android:textColor="@color/orange_ff6a00"
+            android:textSize="@dimen/small_textsize"
+            android:gravity="start"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_no_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不绑定直接登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_textsize"
+            android:background="@drawable/shape_round_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_account_old"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"/>
+
+            <com.ailk.pmph.ui.view.ClearEditText
+                android:id="@+id/et_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:hint="请输入用户名"
+                android:textColorHint="@color/gray_d8d8d8"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_textsize"
+                android:padding="5dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_d8d8d8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:src="@drawable/login_password_old"/>
+
+            <com.ailk.pmph.ui.view.ClearEditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_d8d8d8"
+                android:textSize="@dimen/small_textsize"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_d8d8d8"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_button"
+        android:layout_margin="35dp"
+        android:text="绑定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_textsize"
+        android:gravity="center"
+        android:padding="10dp"/>
+    
+</LinearLayout>

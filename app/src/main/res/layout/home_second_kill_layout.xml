@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_second_kill_center">
+
+        <ImageView
+            android:id="@+id/img0"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/default_img"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="#6cd3fc">
+
+            <TextView
+                android:id="@+id/killPrice0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="￥25"
+                android:textColor="@color/white"
+                android:textSize="@dimen/body_textsize"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即抢购"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_textsize"
+                android:background="@drawable/shape_round_left_second_kill_textview"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_second_kill_left">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/default_img"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="#fdc459">
+
+            <TextView
+                android:id="@+id/killPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="￥25"
+                android:textColor="@color/white"
+                android:textSize="@dimen/body_textsize"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即抢购"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_textsize"
+                android:background="@drawable/shape_round_center_second_kill_textview"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_second_kill_right">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/default_img"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="#fd99bb">
+
+            <TextView
+                android:id="@+id/killPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="￥25"
+                android:textColor="@color/white"
+                android:textSize="@dimen/body_textsize"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即抢购"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_textsize"
+                android:background="@drawable/shape_round_right_second_kill_textview"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

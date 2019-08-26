@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prop_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/shape_round_textview"
+    android:gravity="center"
+    android:text="内容"
+    android:layout_margin="5dp"
+    android:textSize="@dimen/smaller_textsize"
+    android:textColor="@color/gray_312B2D"
+    >
+
+</TextView>

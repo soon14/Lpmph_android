@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="180dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/grid_goods_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+
+    <!-- 商品图片 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_img" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <ImageView
+                android:id="@+id/item_img_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_gds_type_digital"
+                android:visibility="gone"
+                />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="商品名称商品名称商品名称商品名称商品名称名称名称商品名称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/smaller_textsize"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="none"
+            android:text="￥60.00"
+            android:textColor="@color/orange_ff6a00"
+            android:textSize="@dimen/smaller_textsize"/>
+
+        <ImageView
+            android:id="@+id/iv_phone_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_search_phone_price"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_price"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/tv_has"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有电子版"
+            android:textSize="@dimen/smallest_textsize"
+            android:textColor="#fec516"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_collect"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_search_collect"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="24人付款"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/smaller_textsize"
+            android:paddingTop="3dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/item_gds_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="24人付款"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/smaller_textsize"
+            android:paddingTop="3dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

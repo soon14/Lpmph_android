@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/personcenter_background"
+    android:visibility="gone"
+
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/personalcenter_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/default_avtar"
+        android:background="@drawable/img_background"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/transparent"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员等级：超级会员"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/personalcenter_staffmsg"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MANCHUASAH"
+            android:textColor="@color/white"
+            android:id="@+id/personalcenter_name"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

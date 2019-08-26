@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/model_title"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_height="36dp">-->
+
+        <!--<View-->
+            <!--android:layout_width="5dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/red_e9573b"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/title_img"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/title_name"-->
+            <!--android:textSize="13sp"-->
+            <!--android:paddingLeft="10dip"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/black_090909"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:ellipsize="end"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/title_next"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="11sp"-->
+            <!--android:text="更多"-->
+            <!--android:id="@+id/title_more"-->
+            <!--android:paddingRight="10dp"-->
+            <!--/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/gray_ebebeb"/>-->
+
+    <RelativeLayout
+        android:id="@+id/model_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/gray_ebebeb"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="猜你喜欢"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_textsize"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="80dp"
+            android:layout_height="5dp"
+            android:background="@color/blue"
+            android:layout_below="@+id/title_name"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/title_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textSize="@dimen/smaller_textsize"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="5dp"
+            />
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignBottom="@+id/view_line"
+            android:background="@color/gray_ebebeb"/>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/model_body"
+        android:layout_height="wrap_content"
+        />
+    
+
+</LinearLayout>

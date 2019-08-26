@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ailk.pmph"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 蒲公英 -->
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- 允许程序录制音频 -->
+
+
+    <!-- 可选 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <!-- 获取logcat日志 -->
+    <application
+        android:name=".AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${app}"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label"
+    >
+        <activity
+            android:name=".AppStart"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.RegActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.InfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.OrderPayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ShopDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"/>
+        <activity
+            android:name=".ui.activity.OrderConfirmActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.activity.CouponUseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.InvoiceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.activity.DealConfirmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.OrderDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AddressManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AllOrdersActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.CreateAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ModifyAddressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ChoseAreaActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.EditChoseAreaActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.CouponListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ScoreActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ScoreDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.DealListConfirmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.OrderListPayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.WalletActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.WalletDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.DealConfirmShopActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.OrderPayShopActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.UnPayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.UnReceiveActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.UnSendActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.UnCommentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"/>
+        <activity
+            android:name=".ui.activity.CommitCommentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ShopCartActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ReplyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.MyCollectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ChangeNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ChangePsdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.MessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SystemMessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SearchResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.PromotionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SortActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AbcPayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.RankActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.PersonalCenterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.BulletinActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ScanActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SignInActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.LoginPmphActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ChangePwdPmphActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.GuessLikeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.PmphCollectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SecondKillActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ForgetPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.LogisticsInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.AccountBindActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.TelephoneActivity"
+            android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="3686fc3b036177948214f05404e9fbf6"/>
+
+        <!-- 积分商城 -->
+        <activity
+            android:name="com.ailk.integral.activity.InteMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteOrdersActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteOrderExchangeDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteOrderDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteExchangeRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteShopDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteCatgDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteOrderConfirmActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteOneDealConfirmActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteOnePayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteMoreDealConfirmActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteMorePayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteCartActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ailk.integral.activity.InteSearchResultActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <!-- 鸿支付 -->
+        <activity
+            android:name="com.ai.aipay.AiPayActivity"
+            android:label="sharesdk"
+            android:theme="@style/load_dialog"/>
+
+        <!-- 第三方店铺 -->
+        <activity
+            android:name=".thirdstore.activity.StoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".thirdstore.activity.SearchStoreActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".thirdstore.activity.StoreClassifyActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".thirdstore.activity.SearchInStoreActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".thirdstore.activity.SearchResultInStoreActivity"
+                  android:screenOrientation="portrait"/>
+
+        <!--微信分享回调-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105475574"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--微信支付回调-->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- fir升级 -->
+        <meta-data android:name="BUG_HD_SDK_GENERAL_KEY"
+                   android:value="ffc323864ef68f7db27f8e671065f822"/>
+        <!--im模块-->
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/XhsTheme.NoActionBar.SelectPicture"
+        />
+        <activity android:name="com.ailk.im.ui.activity.MessageActivity"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name="com.ailk.im.ui.activity.MyOrdersActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.ailk.im.ui.activity.BrowseGoodsActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.ailk.im.ui.activity.RecordMessageActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/XhsTheme.NoActionBar"
+        />
+        <activity android:name="com.ailk.im.ui.activity.ViewIMPicActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/XhsTheme.NoActionBar"/>
+    </application>
+
+</manifest>

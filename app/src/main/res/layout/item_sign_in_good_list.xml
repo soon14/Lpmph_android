@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/ll_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_round_imageview"
+        >
+
+        <ImageView
+            android:id="@+id/iv_gds_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/default_avtar"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_gds_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="书名书名书名书名书名书名书名书名书名书名书名书名"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_textsize"
+            android:maxEms="15"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_gds_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000积分 + ￥100.00"
+                android:textColor="@color/red"
+                android:textSize="@dimen/small_textsize"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换购"
+                android:textColor="@color/yellow_ffa800"
+                android:textSize="@dimen/smaller_textsize"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@drawable/shape_round_yellow_textview"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

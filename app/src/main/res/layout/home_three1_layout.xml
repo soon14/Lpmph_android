@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.ailk.pmph.ui.view.MaskableImageView
+        android:id="@+id/img0"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        style="@style/home_img_scale_type"
+        android:layout_weight="1"
+        android:padding="10dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray_ebebeb"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.ailk.pmph.ui.view.MaskableImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            style="@style/home_img_scale_type"
+            android:id="@+id/img1"
+            android:layout_weight="1"
+            android:padding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ebebeb"
+            />
+
+        <com.ailk.pmph.ui.view.MaskableImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            style="@style/home_img_scale_type"
+            android:id="@+id/img2"
+            android:layout_weight="1"
+            android:padding="10dp"/>
+    </LinearLayout>
+</LinearLayout>
